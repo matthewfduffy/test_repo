@@ -1,0 +1,96 @@
+[2021-07-06]
+# Installed Snap
+`sudo apt update`
+`sudo apt install snapd`
+----------------------------------------------
+# install Sublime Text
+`sudo snap install sublime-text --classic`
+----------------------------------------------
+# install VS Code
+`sudo snap install code --classic`
+----------------------------------------------
+# Created `Code` directory
+----------------------------------------------
+# Installed git `sudo apt install git`
+git config --global user.name "Matthew Duffy"
+git config --global user.email "matthewfduffy@gmail.com"
+git config --global list
+----------------------------------------------
+# Installed Firefox through AppCenter
+----------------------------------------------
+# Add snap to PATH
+export PATH=$PATH:/snap/bin     # temporary solution
+
+# for permanent solution,edit `etc/environment` and add '/snap/bin'
+#restart to take effect
+# or `$ echo 'export PATH=$PATH:/snap/bin' >> ~/.bashrc`
+-------------------------------------------------
+# Install Node.JS
+`sudo snap install node --classic`
+-------------------------------------------------
+# Install pyenv-installer && pyenv
+    `curl https://pyenv.run | bash`
+
+# add below to .bashrc
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+alias python=python3
+alias py=python3
+alias pip=pip3
+
+`pyenv install --list | grep "3\.[9]"`
+`pyenv install -v 3.9.6`
+`pyenv versions`
+`pyenv global 3.9.6`
+
+# Installed Py3 dependencies
+    `sudo apt install libffi-dev libncurses5-dev zlib1g zlib1g-dev`
+    `sudo apt-get install build-essential checkinstall libreadline-gplv2-dev libncursesw5-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev`
+    `sudo apt-get install libssl1.0-dev`
+# Installed v.3.9.6 && set global to v.3.9.6
+-------------------------------------------------------------------------
+[2021-07-07]
+# installed dconf-editor to modify terminal `sudo apt-get install dconf-editor`
+
+
+The following packages were automatically installed and are no longer required:
+  gir1.2-vte-2.91 libido3-0.1-0
+Use 'sudo apt autoremove' to remove them.
+----------------------------------------------------------------------------
+[2021-07011]
+- Installed JRE
+    `sudo apt install default-jre`
+- Installed IntelliJIDEA 
+    `sudo snap install intellij-idea-educational --classic`
+
+[2021-07-16]
+Installed Jupyter 
+` pip install jupyterlab`
+########################################################
+TO DO
+-----
+- verify snap was added permanently
+- research .bashrc vs. .bash_aliases
+        /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+- Configure terminal colors + git prompt
+- Set Up VS Code Settings Sync
+- VS Code Hotkeys
+- Sublime:
+    - Install Package Manager
+    - Define Hotkeys
+
+ WARNING: The scripts pip3 and pip3.9 are installed in '/home/md/.pyenv/versions/3.9.6/bin' which is not on PATH.
+ 
+ 
+ 
+ ###############
+ $ git init
+ $ git add .
+ $ git commit -m "first commit"
+ $ git remote add origin <remote_url>
+ 
+ $ git remote -v
+ # verifies the new remote url
+ 
+ $ git push origin main
